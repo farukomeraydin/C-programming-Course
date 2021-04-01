@@ -1,0 +1,18 @@
+#define _CRT_SECURE_NO_WARNINGS
+#include <stdio.h>
+#include "Omer.h"
+#include "Mytime.h"
+
+int main()
+{
+	int x, c;
+	printf("Enter a number: ");
+	x = 0;
+
+	while ((c = getchar()) != '\n')
+		x = x * 10 + c - '0';
+
+	printf("x = %d\n", x);
+}
+
+
