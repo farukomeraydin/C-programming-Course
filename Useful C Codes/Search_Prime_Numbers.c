@@ -6,6 +6,7 @@ int main()
 {
 	int k;
 	clock_t start = clock();
+	
 	for (k = 2; k < 7777; ++k) {
 		if (isprime(k) == 1)
 			printf("%d\n", k);
