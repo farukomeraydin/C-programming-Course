@@ -305,6 +305,21 @@ int urand(void)
 	return val;
 }
 
+int urand2(void) {
+	static int flags[URAND_MAX] = { 0 };
+	static int cnt = 0;
+	if (cnt == URAND_MAX) {
+		cnt = 0;
+		memset(flags, 0, URAND_MAX * sizeof(int));
+	}
+	int val;
+	while (flags[val = rand() % URAND_MAX])
+		;
+	++cnt;
+	flags[val] = 1;
+	return val;
+}
+
 void sort_array(int* p, int size)
 {
 	qsort(p, size, sizeof(*p), &icmp);
