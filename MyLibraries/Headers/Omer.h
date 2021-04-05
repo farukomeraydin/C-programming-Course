@@ -72,6 +72,8 @@ int clamp(int, int, int);
 int is_in_range(int, int, int);
 int isperfect(int);
 void delay(double);
+int urand(void);
+int urand2(void);
 int fibo_r(int);	//recursive fibonacci function
 int fibo_i(int);	//iterative fibonacci function
 int fibo_l(int);	//Look-up fibonacci function
