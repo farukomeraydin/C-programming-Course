@@ -6,7 +6,7 @@
 
 int main()
 {
-	int a[SIZE + 1];
+	int a[SIZE];
 	randomize();
 	for (int i = 0; i < SIZE; ++i)
 	{
