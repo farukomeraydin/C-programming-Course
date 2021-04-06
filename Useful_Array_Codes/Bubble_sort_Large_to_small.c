@@ -15,7 +15,7 @@ int main()
 	}
 	printf("\n");
 	for (int i = 0; i < SIZE - 1; ++i)
-		for (int k = 0; k < SIZE - 1; ++k)
+		for (int k = 0; k < SIZE - 1 - i; ++k)
 			if (a[k] < a[k + 1]) {
 				int temp = a[k];
 				a[k] = a[k + 1];
