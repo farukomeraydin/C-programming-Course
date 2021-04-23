@@ -4,7 +4,6 @@
 
 
 #define SIZE 100
-
 int main()
 {
 	char str[SIZE];
