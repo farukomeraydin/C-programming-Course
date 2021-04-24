@@ -9,7 +9,7 @@ int main()
 {
 	char str[SIZE];
 
-	printf("bir yazi girin: ");
+	printf("Enter a string: ");
 	scanf("%s", str);
 	printf("[%s]\n", str);
 	int ival = 0;
