@@ -401,6 +401,13 @@ void reverse_copy_array(int* pdest, const int* psource, int size)
 		++psource;
 	}
 }
+
+void reverse_copy(int *pdest, const int *psource, int size) {
+	psource += size;
+	while (size--)
+		*pdest++ = *--psource;
+}
+
 void get_minmax(const int* pa, int size, int* pmax, int* pmin)
 {
 	*pmax = *pmin = *pa;
