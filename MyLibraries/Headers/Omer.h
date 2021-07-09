@@ -91,6 +91,7 @@ void reverse_array(int*, int);
 void reverse_array2(int*, int);
 void copy_array(int*, const int*, int);
 void reverse_copy_array(int*, const int*, int);
+void reverse_copy_array2(int*, const int*, int);
 void get_minmax(const int*, int, int*, int*);
 void display_array2(const int*, const int*);
 void reverse_array3(int*, int);
