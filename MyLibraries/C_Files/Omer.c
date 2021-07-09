@@ -402,7 +402,7 @@ void reverse_copy_array(int* pdest, const int* psource, int size)
 	}
 }
 
-void reverse_copy(int *pdest, const int *psource, int size) {
+void reverse_copy_array2(int *pdest, const int *psource, int size) {
 	psource += size;
 	while (size--)
 		*pdest++ = *--psource;
