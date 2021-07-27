@@ -115,6 +115,7 @@ char* strcpy2(char*, const char*);
 char* strcat1(char*, const char*);	//My strcat functions
 char* strcat2(char*, const char*);
 char* strcat3(char*, const char*);
+char* strrchr1(const char*, int);	//My strrchr function
 int is_at_end(const char*, const char*);	//Check if a string is at the end of another string (e.g "Racecar" and "car")
 char* strpbrk1(const char*, const char*);	//My strpbrk function
 int stricmp1(const char*, const char*);	//My stricmp function (Case insensitive)
