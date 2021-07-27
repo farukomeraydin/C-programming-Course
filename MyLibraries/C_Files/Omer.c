@@ -661,6 +661,20 @@ int strcmp1(const char* p1, const char* p2)
 	return *p1 - *p2;
 }
 
+char *strrchr1(const char *p, int c) {
+	char *ptr = NULL;
+	while (*p) {
+		if (*p == c)
+			ptr = (char*)p;
+
+		++p;
+	}
+	if (c == '\0')
+		return (char*)p;
+
+	return ptr;
+}
+
 const char* get_day_name(int weekday)
 {
 	switch (weekday) {
