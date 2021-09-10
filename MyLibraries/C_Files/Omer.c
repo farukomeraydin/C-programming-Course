@@ -939,10 +939,18 @@ int icmp(const void* vp1, const void* vp2)
 }
 
 
+
 int dcmp(const void* vp1, const void* vp2)
 {
-    return cmp_date((const Date*)vp1, (const Date*)vp2);
+	if (*(const double*)vp1 > *(const double*)vp2)
+		return 1;
+
+	if (*(const double*)vp1 < *(const double*)vp2)
+		return -1;
+
+	return 0;
 }
+
 
 void gsort(void* vpa, size_t size, size_t width, int(*fp)(const void*, const void*))
 {
