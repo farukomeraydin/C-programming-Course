@@ -33,6 +33,7 @@ Date* scan_date(Date* p);
 
 Date* random_date(Date* p);
 int cmp_date(const Date* p1, const Date* p2);
+int Datecmp(const void* vp1, const void* vp2);
 int get_date_diff(const Date* p1, const Date* p2);
 Date* ndaysafter(Date* pdest, const Date* psource, int n);
 Date* ndaysbefore(Date* pdest, const Date* psource, int n);
