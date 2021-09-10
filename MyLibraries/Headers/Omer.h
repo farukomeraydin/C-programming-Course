@@ -10,9 +10,7 @@
 #include <string.h>
 #include <conio.h>
 #include <Windows.h>
-#include "Mytime.h"
-#include "Student.h"
-#include "Studentlist.h"
+
 
 #define   URAND_MAX      20
 
