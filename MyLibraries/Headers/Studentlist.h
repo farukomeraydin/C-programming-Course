@@ -1,6 +1,6 @@
 #pragma once
 #include "Omer.h"
-#include "student.h"
+#include "Student.h"
 struct List;
 struct Student;
 
