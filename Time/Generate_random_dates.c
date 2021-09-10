@@ -1,6 +1,6 @@
 #define _CRT_SECURE_NO_WARNINGS
 #include "Omer.h"
-
+#include "Mytime.h"
 int main(void)
 {
 	Date dx;
