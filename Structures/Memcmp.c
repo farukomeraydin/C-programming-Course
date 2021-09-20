@@ -7,6 +7,7 @@ struct Data{
 	char c2;
 };
 
+
 int main(void)
 {
 	struct Data d1 = { 13, 98713, 45 };
