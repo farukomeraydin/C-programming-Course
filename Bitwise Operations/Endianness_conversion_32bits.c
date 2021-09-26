@@ -1,7 +1,6 @@
 #define _CRT_SECURE_NO_WARNINGS
 #include "Omer.h"
 
-#define  econ16(x)  ((x) << 8) | ((x) >> 8 & 0xFF)
 
 int main(void)
 {
