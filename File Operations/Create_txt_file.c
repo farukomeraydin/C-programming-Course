@@ -6,7 +6,7 @@ int main()
 {
 	FILE* f;
 	if ((f = fopen("test.txt", "w")) == NULL) {
-		fprintf(stderr, "File cannot be opened\n");
+		fprintf(stderr, "File cannot be created\n");
 		return 1;
 	}
 	printf("File is successfully created\n");
