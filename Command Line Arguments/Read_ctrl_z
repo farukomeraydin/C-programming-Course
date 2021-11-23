@@ -1,0 +1,19 @@
+#define _CRT_SECURE_NO_WARNINGS
+#include "Omer.h"
+
+
+int main()
+{
+	FILE* f = fopen("aaa", "rb"); 
+	if (f == NULL) {
+		printf("dosya olusturulamadi\n ");
+		return 1;
+	}
+
+	int c;
+
+	while ((c = fgetc(f)) != EOF)
+		printf("%d ", c);
+
+	fclose(f);
+}
