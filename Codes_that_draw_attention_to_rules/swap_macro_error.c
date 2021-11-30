@@ -7,7 +7,7 @@ int main()
 {
 	int a = 10, b = 20;
 	if (a > 10)
-		swap(a, b);
+		swap(a, b); //Because of ";" you will get an error
 	else
 		++a;
 }
