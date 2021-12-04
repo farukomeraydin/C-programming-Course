@@ -6,8 +6,12 @@ void cf_assert(const char* pa, const char* pf, int line) {
 	abort();
 }
 
+#ifdef NDEBUG
+	ASSERT(e)	(void)(0)
+#else
 #define ASSERT(e)	if(!(e))	\
 						cf_assert(#e, __FILE__, __LINE__)
+#endif
 
 void func(int x) {
 	ASSERT(x != 0);
