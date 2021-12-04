@@ -7,7 +7,7 @@ int main()
 {
 	char str[SIZE];
 	printf("Enter a string: ");
-	sgets(str); //[  ali  veli  hakan  nur mehmet]
+	sgets(str);
 	printf("(%s)\n", str);
 	char* p = strtok(str, " \t\n"); //space tab character and new line are delimeters
 	while (p) {
