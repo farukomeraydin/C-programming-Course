@@ -130,6 +130,7 @@ void sort1(char*);	//Lexicographic sort
 void sort2(char*);	//Reverse lexicographic sort
 char* create_random_psw1(char*);
 char* create_random_psw2(void);
+char* trim(char* p);
 /*-----------------------POINTER TO POINTER Functions---------------------------------*/
 void pswap(int**, int**);
 void cpswap(char**, char**);
