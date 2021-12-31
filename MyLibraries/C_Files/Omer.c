@@ -1403,3 +1403,19 @@ int get_max(int n, ...) {
 	va_end(args);
 	return max;
 }
+char* trim(char* p) {
+	int i;
+	for (i = 0; p[i] != '\0'; ++i)
+		if (isalnum(p[i]))
+			break;
+
+	char* ptemp = p + i;
+
+	for (i = strlen(ptemp); i >= 0; --i)
+		if (!isspace(ptemp[i - 1])) {
+			ptemp[i] = '\0';
+			break;
+		}
+
+	return ptemp;
+}
