@@ -23,6 +23,7 @@
 #define iprint(x)    printf(#x " = %d\n", x)	//print macro
 #define powof2(x)  ((x) && !((x) & ((x) - 1)))	//Is x power of 2?
 #define  econ32(x)  ((x >> 24 & 0xFF) | (x << 24) | (x >> 8 & 0x0000FF00) | (x << 8 & 0x00FF0000))	//Little-big Endian conversion for 32-bits number
+#define  econ16(x)  ((x) << 8) | ((x) >> 8 & 0xFF) //Little-big Endian conversion for 16-bits number
 #define generate_max_function(t)   t maxarray_##t(const t *ptr, int size) \
 {  \
 	t max = *ptr;  \
